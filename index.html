@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Peer Reviews: revisando el código en equipo</title>
+
+		<meta name="description" content="Consejos y herramientas para revisar el código en equipo.">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+        <section>
+          <h1>Peer reviews: revisando el código en equipo</h1>
+          <p>DrupalCamp Spain 2015</p>
+          <p>Rodrigo Aguilera y Juampy NR</p>
+        </section>
+        <section>
+          <h2>Sobre nosotros</h2>
+          <p>
+            <img align="left" src="images/Juampy-headshot.jpg" width="200"/>
+            <img align="right" src="images/lullabot.jpg" width="200"/>
+            Juampy NR - <a href="https://twitter.com/juampynr" target="_blank">@juampynr</a><br>
+            <br>
+            Back end developer<br>
+            <br>
+            <a href="http://about.me/juampynr" target="_blank">about.me/juampynr</a>
+          </p>
+          <p>
+            <img align="right" src="images/picture-408170-1402419203.jpg" width="200"/>
+            Rodrigo Aguilera - <a href="https://twitter.com/marinero" target="_blank">@marinero</a><br>
+            <br>
+            Developer<br>
+            <br>
+            <a href="http://rodrigoaguilera.net/" target="_blank">rodrigoaguilera.net</a>
+            <img align="left" src="images/logo_ymbra_trans_0.png" width="200"/>
+          </p>
+        </section>
+        <section class="stack">
+          <section>
+            <h1>¿En qué consiste un peer review?</h1>
+            <p>Ejemplo práctico</p>
+            <p>Primera parte</p>
+          </section>
+          <section>
+            <img src="images/donkey_actors.jpg" />
+          </section>
+          <section>
+            <h2>1 Sally crea una issue</h2>
+            <img src="images/workflow_1_open_issue.png" />
+          </section>
+          <section>
+            <h2>2 Betty trabaja en la issue</h2>
+            <img src="images/Selection_003.png" />
+          </section>
+          <section>
+            <h2>3 Betty crea un pull request</h2>
+            <img src="images/Selection_004.png" />
+          </section>
+          <section>
+            <h2>4 Pull request listo para peer review</h2>
+            <img src="images/Selection_006.png" />
+          </section>
+          <section>
+            <h2>5 Comienza el peer review</h2>
+            <img src="images/Selection_008.png" />
+          </section>
+          <section>
+            <h2>6 Revisando el código</h2>
+            <img src="images/Selection_009.png" />
+          </section>
+          <section>
+            <h2>7 Verificando la lógica</h2>
+            <img src="images/Selection_010.png" />
+          </section>
+          <section>
+            <h2>8 Comunicar los resultados</h2>
+            <img src="images/Selection_011.png" />
+          </section>
+          <section>
+            <h2>9 Reajustar y sugerir un nuevo peer review </h2>
+            <img src="images/Selection_013.png" />
+          </section>
+          <section>
+            <h2>10 Segundo peer review</h2>
+            <img src="images/Selection_014.png" />
+          </section>
+          <section>
+            <h2>11 Cerrar la issue</h2>
+            <img src="images/Selection_015.png" />
+          </section>
+        </section>
+        <section class="stack">
+          <section>
+            <h1>¿Por qué es beneficioso?</h1>
+          </section>
+          <section>
+            <h2>Asegurar estabilidad del código</h2>
+            <img data-src="images/Selection_016.png" />
+          </section>
+          <section>
+            <h2>Mantener un código homogéneo</h2>
+            <img src="images/Selection_017.png" />
+          </section>
+          <section>
+            <h2>Aprender en equipo</h2>
+            <img src="images/Selection_018.png" />
+          </section>
+          <section>
+            <h2>Compartir la responsabilidad</h2>
+            <img src="images/Selection_019.png" />
+          </section>
+          <section>
+            <h2>Involucrar a otros roles</h2>
+            <img src="images/tugboat_0.png" />
+          </section>
+        </section>
+        <section class="stack">
+          <section>
+          <h2>Aspectos a definir en equipo antes de comenzar a hacer peer reviews</h2>
+          </section>
+          <section>
+            <h2>Cómo preparar un pull request</h2>
+            <img src="images/pull_request.png" />
+          </section>
+          <section>
+            <h2>Qué se va a revisar</h2>
+            <img src="images/Selection_002.png" />
+          </section>
+          <section>
+            <h2>Qué estándares se van a seguir</h2>
+            <img src="images/standards.png" />
+          </section>
+          <section>
+            <h2>Cuándo un ticket está resuelto</h2>
+            <img src="images/done.png" height="600" />
+          </section>
+        </section>
+        <section>
+          <h1>Segunda parte</h1>
+        </section>
+        <section>
+          <h2>Prepararse para hacer el cambio</h2>
+          <ul>
+            <li> Un cambio en la cultura de equipo</li>
+            <li> Intentar tener en código todo lo posible</li>
+            <li> Saca tu código a la luz </li>
+            <li> No todo es codigo fuente</li>
+            <li> Codigo de terceros</li>
+          </ul>
+          <aside class="notes">
+            Todo lo que se puede aplicar un diff es revisable <br />
+            Ojo con las referencias a otro código fuente.
+          </aside>
+        </section>
+
+        <section>
+          <h2>Conceptos</h2>
+          <ul>
+            <li>Pre/Post commit review</li>
+            <li>Proceso sistemático</li>
+            <li>Revisión por humanos o máquinas</li>
+          </ul>
+          <aside class="notes">
+            Pre commit es lo más interesante <br />
+            Post commit también se conoce como auditoria o inspección de código.
+            <br />
+            Code review como firewall.
+            <br>
+            La revisión precommit es el momento ideal para cambiar arquitectura.
+            <br>
+          </aside>
+        </section>
+
+        <section data-background="images/paircats.gif">
+          <h2 style="color:white; text-shadow: 4px 4px 4px #000;">Pair programming</h2>
+        </section>
+
+        <section>
+          <h2>Revisión por parte de maquinas</h2>
+          <p>
+          <ul>
+            <li> Estandares de código</li>
+            <li> Testing</li >
+            <li> Análisis estatico de código (Complejidad, duplicados...)</li>
+            <li> Te salvan de ser pedante</li>
+          </ul>
+          </p>
+          <aside class="notes">
+          </aside>
+        </section>
+
+        <section>
+          <h2>Revisión por parte de humanos</h2>
+          <p>
+            <h3>Todavía somos irremplazables en algunos aspectos</h3>
+          <ul>
+            <li>Requerimientos</li>
+            <li>Arquitectura</li>
+            <li>Coding idioms</li>
+            <li>Código reusable, futureproof</li>
+            <li>Conocimiento del dominio</li>
+          </ul>
+          </p>
+          <aside class="notes">
+            Drupal 8 o PHP 7 es el futuro <br />
+            La revisión ocurre en otras profesiones
+          </aside>
+        </section>
+
+        <section data-background="images/umbrella.gif">
+          <h2 style="color:white;text-shadow: 4px 4px 4px #000;">Nuevos desarrolladores</h2>
+        </section>
+
+        <section>
+          <h2>Nuevos desarrolladores</h2>
+          <p>
+          <ul>
+            <li>Ganan experiencia</li>
+            <li class="fragment">Seguridad a la hora de integrar código</li>
+            <li class="fragment">Revisar y ser revisado es un reto</li>
+          </ul>
+          </p>
+          <aside class="notes">
+          </aside>
+        </section>
+
+        <section>
+          <h2>Otras maneras de proponer un cambio</h2>
+          <p>
+          <ul>
+            <li> Ficheros patch (Drupal.org)</li>
+            <li> Differential (Phabricator suite) - PHP</li>
+            <li> Redmine</li>
+            <li> Gerrit</li>
+            <li>
+              <a href="https://en.wikipedia.org/wiki/List_of_tools_for_code_review">https://en.wikipedia.org/wiki/List_of_tools_for_code_review</a>
+            </li>
+          </ul>
+          </p>
+          <aside class="notes">
+            Existen otras opciones
+          </aside>
+        </section>
+
+        <section>
+          <h2>Cambios percibidos</h2>
+          <p>
+          <ul>
+            <li>El código se hace digerible</li>
+            <li class="fragment"> Conversaciones sobre código</li>
+            <li class="fragment"> Revisión temprana de la arquitectura</li>
+            <li class="fragment"> Uso de pastebin</li>
+            <li class="fragment"> Conocimiento global de la aplicación</li>
+          </ul>
+          </p>
+          <aside class="notes">
+            Cambio mi vida como desarrollador. <br />
+          </aside>
+        </section>
+        <section>
+          <h2>Enlaces de interés</h2>
+          <ul>
+            <li><a href="https://www.lullabot.com/blog/article/peer-review-how-guide" target="_blank">The Peer Review How-To Guide</a></li>
+          </ul>
+        </section>
+        <section>
+          <h2>¡Gracias! ¿Preguntas?</h2>
+          <p>
+            <img align="left" src="images/Juampy-headshot.jpg" width="200"/>
+            <img align="right" src="images/lullabot.jpg" width="200"/>
+            Juampy NR<br>
+            <br>
+            <a href="https://twitter.com/juampynr" target="_blank">@juampynr</a><br>
+            <br>
+            <a href="http://about.me/juampynr" target="_blank">about.me/juampynr</a>
+          </p>
+          <p>
+            <img align="right" src="images/picture-408170-1402419203.jpg" width="200"/>
+            <img align="left" src="images/logo_ymbra_trans_0.png" width="200"/>
+            Rodrigo Aguilera<br>
+            <a href="https://twitter.com/marinero" target="_blank">@marinero</a><br>
+            <br>
+            <a href="http://rodrigoaguilera.net/" target="_blank">rodrigoaguilera.net</a>
+          </p>
+        </section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
