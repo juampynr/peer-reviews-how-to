@@ -43,6 +43,12 @@
           <h1>Peer reviews: revisando el código en equipo</h1>
           <p>DrupalCamp Spain 2015</p>
           <p>Rodrigo Aguilera y Juampy NR</p>
+
+          <aside class="notes">
+            No relacionada con Drupal.
+            <br>
+            El objetivo es animar a empezar estrategias de revisión de código mejores.
+          </aside>
         </section>
         <section>
           <h2>Sobre nosotros</h2>
@@ -55,6 +61,7 @@
             <br>
             <a href="http://about.me/juampynr" target="_blank">about.me/juampynr</a>
           </p>
+          <hr>
           <p>
             <img align="right" src="images/picture-408170-1402419203.jpg" width="200"/>
             Rodrigo Aguilera - <a href="https://twitter.com/marinero" target="_blank">@marinero</a><br>
@@ -62,9 +69,12 @@
             Developer<br>
             <br>
             <a href="http://rodrigoaguilera.net/" target="_blank">rodrigoaguilera.net</a>
-            <img align="left" src="images/logo_ymbra_trans_0.png" width="200"/>
+            <img style="background: white;" align="left" src="images/logo_ymbra_trans_0.png" width="200"/>
           </p>
         </section>
+          <aside class="notes">
+            Pregunta: ¿Quien hace peer review en su equipo?
+          </aside>
         <section class="stack">
           <section>
             <h1>¿En qué consiste un peer review?</h1>
@@ -180,6 +190,8 @@
           <aside class="notes">
             Todo lo que se puede aplicar un diff es revisable <br />
             Ojo con las referencias a otro código fuente.
+            <br />
+            Codigo generado a partir de sass.
           </aside>
         </section>
 
@@ -210,7 +222,7 @@
           <p>
           <ul>
             <li> Estandares de código</li>
-            <li> Testing</li >
+            <li> Testing</li>
             <li> Análisis estatico de código (Complejidad, duplicados...)</li>
             <li> Te salvan de ser pedante</li>
           </ul>
@@ -246,11 +258,13 @@
           <p>
           <ul>
             <li>Ganan experiencia</li>
-            <li class="fragment">Seguridad a la hora de integrar código</li>
-            <li class="fragment">Revisar y ser revisado es un reto</li>
+            <li class="fragment"> Seguridad a la hora de integrar código</li>
+            <li class="fragment"> Revisar y ser revisado es un reto</li>
+            <li class="fragment"> Dejan la actitud de "Esto funciona" y se reflexiona más sobre el código.
           </ul>
           </p>
           <aside class="notes">
+            Es el momento de explicarles la importancia de conceptos como los estándares de código.
           </aside>
         </section>
 
@@ -258,17 +272,37 @@
           <h2>Otras maneras de proponer un cambio</h2>
           <p>
           <ul>
-            <li> Ficheros patch (Drupal.org)</li>
+            <li> Ficheros patch (Drupal.org) - Dreditor</li>
             <li> Differential (Phabricator suite) - PHP</li>
             <li> Redmine</li>
             <li> Gerrit</li>
+            <li> Gitlab </li>
             <li>
               <a href="https://en.wikipedia.org/wiki/List_of_tools_for_code_review">https://en.wikipedia.org/wiki/List_of_tools_for_code_review</a>
             </li>
           </ul>
           </p>
           <aside class="notes">
-            Existen otras opciones
+            Existen otras opciones.
+            <br />
+            simplytest.me
+          </aside>
+        </section>
+
+        <section>
+          <h2> Primeros pasos (despacito) </h2>
+          <p>
+          <ul>
+            <li> Solo un equipo o solo un repo</li>
+            <li> Solo los diffs </li>
+            <li> Partes del código que "huelen" </li>
+            <li> Abrir peticiones de revisión </li>
+          </ul>
+          </p>
+          <aside class="notes">
+            Hay tentación de revisar el código que está alrededor.
+            <br />
+            No crear jerarquias poniendo por medio la revisión de código.
           </aside>
         </section>
 
@@ -281,12 +315,39 @@
             <li class="fragment"> Revisión temprana de la arquitectura</li>
             <li class="fragment"> Uso de pastebin</li>
             <li class="fragment"> Conocimiento global de la aplicación</li>
+            <li class="fragment"> Equipo multifuncional</li>
           </ul>
           </p>
           <aside class="notes">
             Cambio mi vida como desarrollador. <br />
+            No te puedes permitir el codig ocomplicado.
           </aside>
         </section>
+
+
+        <section>
+          <h2>Revisiones libres de ego</h2>
+          <p>
+          <ul>
+            <li> Alcanzar un acuerdo sin imponer soluciones</li>
+            <li class="fragment"> No se trata de buscar responsables ni anotarse puntos</li>
+            <li class="fragment"> Intenta no ser pedante</li>
+            <li class="fragment"> Encuentra problemas, no soluciones</li>
+            <li class="fragment"> Agradece el feedback</li>
+          </ul>
+          </p>
+          <aside class="notes">
+            No uses pronombres "tu lo has hecho de esta manera", "yo se hacerlo"...
+            <br />
+            Plantea preguntas.
+            <br />
+            Deja que las herramientas automaticas sean pedantes.
+            <br />
+            Mirar las revisiones de los core commiters.
+          </aside>
+        </section>
+
+
         <section>
           <h2>Enlaces de interés</h2>
           <ul>
@@ -304,47 +365,51 @@
             <br>
             <a href="http://about.me/juampynr" target="_blank">about.me/juampynr</a>
           </p>
+          <hr>
           <p>
             <img align="right" src="images/picture-408170-1402419203.jpg" width="200"/>
-            <img align="left" src="images/logo_ymbra_trans_0.png" width="200"/>
+            <img style="background: white;" align="left" src="images/logo_ymbra_trans_0.png" width="200"/>
             Rodrigo Aguilera<br>
             <a href="https://twitter.com/marinero" target="_blank">@marinero</a><br>
             <br>
             <a href="http://rodrigoaguilera.net/" target="_blank">rodrigoaguilera.net</a>
           </p>
+          <aside class="notes">
+            Los mejores equipos son aquellos con este tipo de cultura colaborativa.
+          </aside>
         </section>
 
-			</div>
+      </div>
 
-		</div>
+    </div>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
 
-		<script>
+    <script>
 
-			// Full list of configuration options available at:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
+// Full list of configuration options available at:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+  controls: true,
+  progress: true,
+  history: true,
+  center: true,
 
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
+  transition: 'slide', // none/fade/slide/convex/concave/zoom
 
-				// Optional reveal.js plugins
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
-				]
-			});
+  // Optional reveal.js plugins
+  dependencies: [
+  { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+  { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+  { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+  { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+  { src: 'plugin/zoom-js/zoom.js', async: true },
+  { src: 'plugin/notes/notes.js', async: true }
+  ]
+});
 
-		</script>
+    </script>
 
-	</body>
+  </body>
 </html>
